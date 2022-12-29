@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Selectores combinados: General de hermanos y Elemento adyancente</h2>
+  <div class="container">
+    <!-- Selectores Combinado: General de Hermanos -->
+    <section class="section1">
+      <p>(parrafo) No soy hermano de div</p>
+      <div><ins>Soy un div</ins></div>
+      <p>(parrafo) Elemento hermano de div</p>
+      <p>(parrafo) Elemento hermano de div</p>
+      <p>(parrafo) Elemento hermano de div</p>
+       <span>Un span...</span> <br>
+      <input type="text" placeholder="Un input de texto...">
+      <p>(parrafo) Elemento hermano de div</p>
+    </section>
+    <hr>
+    <!--Selectores Combinado: elemento adyancente-->
+    <section class="section2">
+      <div><ins>Soy otro div</ins></div>
+      <p>(parrafo) Elemento abajo del div (Elemento adyacente al div)</p>
+      <p>(parrafo) Elemento abajo del div pero no adyacente</p>
+      <p>(parrafo) Elemento abajo del div pero no adyancente</p>
+      <div><ins>Soy otro div</ins></div>
+      <p>(parrafo) Elemento abajo del div (Elemento adyacente al div)</p>
+      <p>(parrafo) Elemento abajo del div pero no adyancente</p>
+    </section>
+  </div>
+
+  <h2>Selectores combinados: Descendientes e Hijo directo</h2>
+  <div class="container">
+    <!--Selectores Combinado: Descendientes-->
+    <section class="section3">
+      <div>
+        <ins>Soy un div y tengo elementos hijos</ins>
+        <p>Un parrafo dentro del div (descendiente)</p>
+        <p>Un parrafo dentro del div (descendiente)</p>
+        <article>
+          <ins>Soy un article dentro del div y tengo elementos hijos</ins>
+          <p>Un parrafo dentro de article (descendiente sin importar la profundidad)</p>
+          <p>Un parrafo dentro de article (descendiente sin importar la profundidad)</p>
+        </article>
+      </div>
+    </section>
+    <hr>
+    <!--Selectores Combinado: Hijo directo-->
+    <section class="section4">
+      <div>
+        <ins>Soy otro div y tengo elementos hijos</ins>
+        <p>Un parrafo dentro del div (hijo directo)</p>
+        <p>Un parrafo dentro del div (hijo directo)</p>
+        <article>
+          <ins>Soy un article dentro del div y tengo elementos hijos</ins>
+          <p>Un parrafo dentro de article (No soy hijo directo del div)</p>
+          <p>Un parrafo dentro de article (No soy hijo directo del div)</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
